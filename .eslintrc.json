@@ -1,8 +1,10 @@
 {
-  "extends": ["next", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["next", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "prettier/prettier": "error",
+    "no-console": "warn",
     "no-restricted-imports": [
       "error",
       {
